@@ -12,6 +12,10 @@
 
 Core thesis: **There is no luck in this world, only choices and their costs.**
 
+## Community
+
+Join the reader community on Discord: **[discord.gg/vywTPDqEnG](https://discord.gg/vywTPDqEnG)**
+
 ## Languages
 
 This repository provides the book in two languages:
@@ -34,7 +38,7 @@ This digital edition was prepared by [Alvin Ma](https://github.com/alvinonmars) 
 ## Structure
 
 ```
-stones-beneath-the-current/
+a-philosophy-of-choice-and-cost/
 ├── README.md
 ├── zh/                    # 中文版
 │   ├── book.toml
