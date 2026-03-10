@@ -1,0 +1,9 @@
+[book]
+authors = ["姜蓝"]
+language = "zh"
+multilingual = false
+src = "src"
+title = "人选天选论"
+
+[output.html]
+default-theme = "light"
