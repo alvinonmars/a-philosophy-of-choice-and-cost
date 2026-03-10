@@ -1,0 +1,9 @@
+[book]
+authors = ["Jiang Lan (姜蓝)"]
+language = "zh"
+multilingual = false
+src = "src"
+title = "A Philosophy of Choice and Cost | 人选天选论 (Bilingual)"
+
+[output.html]
+default-theme = "light"

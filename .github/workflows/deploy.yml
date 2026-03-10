@@ -29,6 +29,7 @@ jobs:
           mkdir -p build
           mdbook build zh -d ../build/zh
           mdbook build en -d ../build/en
+          mdbook build bilingual -d ../build/bilingual
           cp index.html build/index.html
 
       - name: Upload artifact
