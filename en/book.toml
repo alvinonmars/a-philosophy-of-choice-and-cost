@@ -3,7 +3,7 @@ authors = ["Jiang Lan (姜蓝)"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Stones Beneath the Current"
+title = "A Philosophy of Choice and Cost"
 
 [output.html]
 default-theme = "light"

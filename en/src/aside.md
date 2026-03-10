@@ -1,6 +1,6 @@
 # Aside
 
-## Stones Beneath the Current
+## A Philosophy of Choice and Cost
 
 The complete original text of this book will be published online. It primarily expounds the author's personal cosmology, worldview, and values.
 
@@ -14,4 +14,4 @@ This volume mainly describes the contemplation of seeking out causal ledgers and
 
 ---
 
-*© Jiang Lan · Stones Beneath the Current*
+*© Jiang Lan · A Philosophy of Choice and Cost*

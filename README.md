@@ -1,14 +1,14 @@
-# Stones Beneath the Current
+# A Philosophy of Choice and Cost
 
 **《人选天选论》 by 姜蓝 (Jiang Lan)**
 
-> A philosophy of choice and cost — understanding the hidden stones of greed and fear beneath the river of your mind.
+> Understanding the hidden stones of greed and fear beneath the river of your mind.
 
 ---
 
 ## About This Book
 
-"人选天选论" (Stones Beneath the Current) is a personal philosophy book by Jiang Lan (姜蓝). Using the central metaphor of the mind as a river — with greed and fear as hidden stones at the bottom, and rationalizations as surface ripples — the author presents a practical framework for self-awareness through daily introspection.
+"人选天选论" (A Philosophy of Choice and Cost) is a personal philosophy book by Jiang Lan (姜蓝). Using the central metaphor of the mind as a river — with greed and fear as hidden stones at the bottom, and rationalizations as surface ripples — the author presents a practical framework for self-awareness through daily introspection.
 
 Core thesis: **There is no luck in this world, only choices and their costs.**
 
