@@ -5,3 +5,4 @@ __pycache__/
 images/*
 !images/originals/
 images/processed/
+.privacy_review_token
