@@ -215,7 +215,14 @@ Launch 1 agent to review `zh/src/chXX.md` and apply these formatting rules:
 
    Normal prose paragraphs must NEVER be split into multiple lines. If a sentence is long, leave it as one paragraph.
 
-7. **Verify `---` placement**: Page break separators should be between major sections, not randomly inserted.
+7. **Punctuation cleanup**:
+   - Remove unnecessary punctuation that disrupts reading flow
+   - Don't add punctuation that isn't in the source text
+   - Watch for doubled punctuation (，，or 。。)
+   - Ensure quotation marks are properly paired（""not mixing ""and""）
+   - Chinese text uses Chinese punctuation（，。、；：""）not English (,.;:"")
+
+8. **Verify `---` placement**: Page break separators should be between major sections, not randomly inserted.
 
 The agent reads the file, applies fixes, and writes it back. Then display a summary of changes made.
 
