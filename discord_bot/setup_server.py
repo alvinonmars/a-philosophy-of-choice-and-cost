@@ -24,7 +24,6 @@ async def setup_roles(guild):
     roles_config = [
         {"name": "中文读者", "color": discord.Color.red()},
         {"name": "English Reader", "color": discord.Color.blue()},
-        {"name": "道痕践行者 | Practitioner", "color": discord.Color.gold()},
     ]
     created = []
     for rc in roles_config:
@@ -50,7 +49,6 @@ async def setup_channels(guild):
         "\U0001f4d6 BOOK DISCUSSION | \u8bfb\u4e66\u8ba8\u8bba": [
             {"name": "\u4e94\u5883\u8ba8\u8bba-five-states", "read_only": False},
             {"name": "\u767d\u9ed1\u77f3\u5934-stones", "read_only": False},
-            {"name": "\u9053\u75d5\u65e5\u8bb0-dao-marks", "read_only": False},
             {"name": "\u81ea\u7531\u8ba8\u8bba-general-chat", "read_only": False},
         ],
         "\U0001f6e0\ufe0f COMMUNITY | \u793e\u533a": [
@@ -117,8 +115,7 @@ https://alvinonmars.github.io/a-philosophy-of-choice-and-cost/
 📌 **社区规则 / Rules:**
 1️⃣ 中英文皆可，鼓励双语交流 / Both Chinese and English are welcome
 2️⃣ 尊重不同观点，理性讨论 / Respect different perspectives
-3️⃣ 欢迎在 #道痕日记-dao-marks 分享你的日常自省 / Share your daily reflections
-4️⃣ 禁止广告、spam 和无关内容 / No ads, spam, or off-topic content
+3️⃣ 禁止广告、spam 和无关内容 / No ads, spam, or off-topic content
 
 🌐 **选择你的语言角色 / Choose your language role:**
 React below: 🇨🇳 = 中文读者 | 🇬🇧 = English Reader

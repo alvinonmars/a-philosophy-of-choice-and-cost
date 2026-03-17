@@ -114,6 +114,7 @@ ALLOWLISTED_FILES = {
     "scripts/privacy_check.py",
     "README.md",
     "index.html",
+    "discord_bot/setup_server.py",
 }
 
 BINARY_EXTENSIONS = {
