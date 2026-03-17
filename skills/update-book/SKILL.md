@@ -169,7 +169,57 @@ Proofreading Round N:
   Status: [continuing / complete]
 ```
 
-**Checkpoint:** "Proofreading complete after N rounds. All 3 agents PASS. Starting translation."
+**Checkpoint:** "Proofreading complete after N rounds. All 3 agents PASS. Starting layout polish."
+
+---
+
+### Phase 3.5: Layout Polish
+
+**Goal:** Make the markdown well-formatted for comfortable reading — especially on mobile. No need to match the original images exactly.
+
+Launch 1 agent to review `zh/src/chXX.md` and apply these formatting rules:
+
+#### Rules
+
+1. **Multi-line blockquotes**: Every `> ` line in a multi-line group MUST have a `>` blank line between them. No exceptions.
+
+2. **Chapter epigraph** (if the chapter has an opening poem/title page): Wrap in HTML structure:
+   ```html
+   <div class="epigraph">
+   <div class="book-title">人 选 天 选 论</div>
+   <div class="book-author">姜 蓝 著</div>
+   <hr>
+   <div class="verse">
+
+   verse line 1
+
+   verse line 2
+
+   </div>
+   </div>
+   ```
+
+3. **Chapter footer** (last line, author attribution): Wrap in:
+   ```html
+   <div class="chapter-footer">— 姜蓝《人选天选论》· 第X章 标题 —</div>
+   ```
+
+4. **Short poetic/rhythmic sentences** that clearly form a list or verse (e.g., "有的人找运气 / 有的人找形势 / ..."): Must be in a blockquote with `>` blank lines between each line. Do NOT merge into one paragraph.
+
+5. **No unnecessary formatting**: Don't add HTML classes to normal body paragraphs. CSS handles indent and spacing automatically.
+
+6. **No unreasonable line breaks**: Only split into separate lines when the text is clearly:
+   - A verse or poem (rhythmic, parallel structure)
+   - A list of items (每一行是一个独立条目)
+   - A repeated pattern (e.g., "有的人...有的人...有的人...")
+
+   Normal prose paragraphs must NEVER be split into multiple lines. If a sentence is long, leave it as one paragraph.
+
+7. **Verify `---` placement**: Page break separators should be between major sections, not randomly inserted.
+
+The agent reads the file, applies fixes, and writes it back. Then display a summary of changes made.
+
+**Checkpoint:** "Layout polish complete. N formatting fixes applied. Starting translation."
 
 ---
 

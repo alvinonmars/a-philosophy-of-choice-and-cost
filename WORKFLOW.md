@@ -133,12 +133,15 @@ When new chapter images are available:
 1. Place images in `images/` (sorted by page order, e.g. `ch03_01.jpg` ~ `ch03_07.jpg`)
 2. Run OCR agent → new `zh/src/chXX.md`
 3. Run proofreading loop (3 agents, until all PASS)
-4. Run translation agent → new `en/src/chXX.md`
-5. Run translation review loop (3 agents, until all PASS)
-6. Run bilingual agent → new `bilingual/src/chXX.md`
-7. Update all 3 `SUMMARY.md` files
-8. Move processed images to `images/processed/chXX/` to avoid reprocessing
-9. Commit and push (auto-deploys)
+4. Run layout polish agent (blockquote line breaks, epigraph/footer HTML, verse formatting)
+5. Run translation agent → new `en/src/chXX.md`
+6. Run translation review loop (3 agents, until all PASS)
+7. Run layout polish on `en/src/chXX.md`
+8. Run bilingual agent → new `bilingual/src/chXX.md`
+9. Run layout polish on `bilingual/src/chXX.md`
+10. Update all 3 `SUMMARY.md` files
+11. Move processed images to `images/processed/chXX/` to avoid reprocessing
+12. Commit and push (auto-deploys)
 
 > **Note:** `images/` is gitignored — source images are kept locally for traceability but not committed to the repo.
 
