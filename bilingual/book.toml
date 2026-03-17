@@ -8,3 +8,4 @@ title = "A Philosophy of Choice and Cost | 人选天选论 (Bilingual)"
 [output.html]
 default-theme = "light"
 additional-css = ["src/custom.css"]
+additional-js = ["src/font-sizer.js"]

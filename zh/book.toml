@@ -8,3 +8,4 @@ title = "人选天选论"
 [output.html]
 default-theme = "light"
 additional-css = ["src/custom.css"]
+additional-js = ["src/font-sizer.js"]
