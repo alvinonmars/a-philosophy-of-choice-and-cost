@@ -26,18 +26,12 @@
 
 /* Override mdBook's default content padding on mobile */
 .content main {
-    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
-    font-size: 1.15rem;  /* ~18.4px — comfortable for Chinese on mobile */
-    line-height: 2.0;
+    font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
     color: var(--fg);
     max-width: 42em;
     padding: 0 1em;
-}
-
-/* Force font size — prevent mdBook theme from overriding */
-.content main p,
-.content main li {
-    font-size: 1.15rem;
 }
 
 /* ===== Body paragraphs ===== */
@@ -56,7 +50,7 @@
 /* ===== Chapter headings ===== */
 
 .content main h1 {
-    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+    font-family: inherit;
     font-weight: 600;
     font-size: 1.5rem;
     text-align: center;
@@ -148,11 +142,6 @@
     .content main {
         font-size: 1.15rem;
         padding: 0 2em;
-    }
-
-    .content main p,
-    .content main li {
-        font-size: 1.15rem;
     }
 
     .content main h1 {
