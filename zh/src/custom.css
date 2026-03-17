@@ -1,0 +1,129 @@
+/* Custom styling for 人选天选论 — matching original book layout */
+
+/* ===== Typography ===== */
+
+/* Chinese body text: serif font, comfortable reading */
+.content main {
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #2c2c2c;
+}
+
+/* First-line indent for body paragraphs (Chinese convention) */
+.content main p {
+    text-indent: 2em;
+    margin-bottom: 0.8em;
+}
+
+/* Don't indent paragraphs inside blockquotes or epigraphs */
+.content main blockquote p,
+.content main .epigraph p {
+    text-indent: 0;
+}
+
+/* ===== Chapter headings ===== */
+
+.content main h1 {
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 2em 0 1.5em;
+    letter-spacing: 0.05em;
+}
+
+/* ===== Epigraph (chapter opening poem/quote) ===== */
+
+.epigraph {
+    text-align: center;
+    padding: 3em 2em;
+    margin: 0 auto 2em;
+    max-width: 80%;
+}
+
+.epigraph .book-title {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.epigraph .book-author {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+.epigraph hr {
+    width: 60%;
+    margin: 1.5em auto;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.epigraph .verse {
+    font-size: 1.05rem;
+    line-height: 2.2;
+    color: #444;
+}
+
+.epigraph .verse p {
+    text-indent: 0;
+    margin: 0;
+}
+
+/* ===== Blockquote (highlighted text boxes) ===== */
+/* Matching the original's light grey background box */
+
+.content main blockquote {
+    background: #f5f3ef;
+    border-left: 3px solid #d4cfc7;
+    border-radius: 4px;
+    padding: 1.2em 1.5em;
+    margin: 1.5em 1em;
+    font-size: 0.98rem;
+    line-height: 2;
+    color: #3a3a3a;
+}
+
+.content main blockquote p {
+    margin: 0.3em 0;
+}
+
+/* ===== Page break separator ===== */
+
+.content main hr {
+    border: none;
+    border-top: 1px solid #e0ddd6;
+    margin: 2.5em auto;
+    width: 40%;
+}
+
+/* ===== Chapter footer attribution ===== */
+
+.chapter-footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid #e0ddd6;
+}
+
+/* ===== Page background (warm off-white like the original) ===== */
+
+:root {
+    --bg: #faf8f4;
+    --fg: #2c2c2c;
+}
+
+.light {
+    --bg: #faf8f4;
+}
+
+/* ===== Reading width ===== */
+
+.content main {
+    max-width: 42em;
+}

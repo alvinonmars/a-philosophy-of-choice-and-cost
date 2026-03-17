@@ -7,3 +7,4 @@ title = "A Philosophy of Choice and Cost"
 
 [output.html]
 default-theme = "light"
+additional-css = ["src/custom.css"]

@@ -141,3 +141,49 @@ When new chapter images are available:
 9. Commit and push (auto-deploys)
 
 > **Note:** `images/` is gitignored — source images are kept locally for traceability but not committed to the repo.
+
+## Formatting Standards
+
+Custom CSS (`src/custom.css`) is shared across all 3 editions. The styling matches the original book's visual layout.
+
+### Epigraph (Chapter Opening Page)
+
+Each chapter starts with an epigraph page. Use this HTML structure:
+
+```html
+<div class="epigraph">
+<div class="book-title">人 选 天 选 论</div>
+<div class="book-author">姜 蓝 著</div>
+<hr>
+<div class="verse">
+
+"引言文字"
+
+逐行排列
+
+</div>
+</div>
+```
+
+### Body Text
+
+- **No special markup needed** — CSS handles first-line indent (`text-indent: 2em`)
+- Use `---` for page breaks between sections
+- Use `> ` blockquotes for highlighted text boxes (grey background, matching original)
+
+### Chapter Footer
+
+```html
+<div class="chapter-footer">— 姜蓝《人选天选论》· 第X章 标题 —</div>
+```
+
+### Visual Effects (via CSS)
+
+| Element | Effect |
+|---------|--------|
+| Body text | Serif font (Noto Serif SC), 2em first-line indent, warm background |
+| Headings | Centered, letter-spaced |
+| Blockquotes | Light grey background box with left border |
+| Page breaks | Thin centered line, 40% width |
+| Epigraph | Centered layout, large title, verse text |
+| Footer | Centered, small, grey |
