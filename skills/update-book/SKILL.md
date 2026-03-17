@@ -107,6 +107,14 @@ Each OCR agent:
 - Transcribes all text to markdown
 - Applies formatting: `#` headings, `> ` blockquotes, `**bold**`, `---` page breaks between pages
 - The chapter heading format is: `# 第X章 · [chapter title]`
+- **CRITICAL: Multi-line blockquotes must have `>` blank lines between each line.** Otherwise markdown merges them into one paragraph. Example:
+  ```
+  > Line one.
+  >
+  > Line two.
+  ```
+- Use `<div class="epigraph">` for chapter opening pages (see WORKFLOW.md Formatting Standards)
+- Use `<div class="chapter-footer">` for chapter-end attribution
 
 4. If multiple agents were used, merge their outputs into a single `$PROJECT/zh/src/chXX.md`
 5. Display the first 20 lines and last 10 lines for a quick sanity check
