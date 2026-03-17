@@ -222,7 +222,9 @@ Launch 1 agent to review `zh/src/chXX.md` and apply these formatting rules:
    - Ensure quotation marks are properly paired（""not mixing ""and""）
    - Chinese text uses Chinese punctuation（，。、；：""）not English (,.;:"")
 
-8. **Verify `---` placement**: Page break separators should be between major sections, not randomly inserted.
+8. **Verify `---` placement**: Page break separators should only be between major sections or natural pauses. **NEVER** place `---` in the middle of a sentence or paragraph. If OCR inserted `---` at a page boundary that splits a sentence, remove the `---` and merge the text back into one paragraph.
+
+9. **Cross-page sentence merging**: OCR agents split text by image/page boundaries. If a sentence starts on one page and continues on the next, the text MUST be merged into one paragraph. Look for paragraphs ending without punctuation or the next paragraph starting with a comma/period.
 
 The agent reads the file, applies fixes, and writes it back. Then display a summary of changes made.
 
