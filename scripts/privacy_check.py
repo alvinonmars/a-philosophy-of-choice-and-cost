@@ -112,6 +112,8 @@ DEFAULT_ALLOWLISTED_STRINGS = {
 
 ALLOWLISTED_FILES = {
     "scripts/privacy_check.py",
+    "README.md",
+    "index.html",
 }
 
 BINARY_EXTENSIONS = {

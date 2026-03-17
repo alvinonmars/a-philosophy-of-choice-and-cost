@@ -4,6 +4,10 @@
 
 > Understanding the hidden stones of greed and fear beneath the river of your mind.
 
+### **[Read Online](https://alvinonmars.github.io/a-philosophy-of-choice-and-cost/)**
+
+**[中文版](https://alvinonmars.github.io/a-philosophy-of-choice-and-cost/zh/)** | **[English](https://alvinonmars.github.io/a-philosophy-of-choice-and-cost/en/)** | **[Bilingual 中英对照](https://alvinonmars.github.io/a-philosophy-of-choice-and-cost/bilingual/)**
+
 ---
 
 ## About This Book
@@ -47,7 +51,8 @@ a-philosophy-of-choice-and-cost/
 │       ├── preface.md     # 序
 │       ├── aside.md       # 话外
 │       ├── ch01.md        # 第一章 · 河流世界
-│       └── ch02.md        # 第二章 · 走向觉醒的"人之路"
+│       ├── ch02.md        # 第二章 · 走向觉醒的"人之路"
+│       └── ch03.md        # 第三章 · 硬币世界
 ├── en/                    # English edition
 │   ├── book.toml
 │   └── src/
@@ -55,6 +60,11 @@ a-philosophy-of-choice-and-cost/
 │       ├── preface.md
 │       ├── aside.md
 │       ├── ch01.md
-│       └── ch02.md
-└── images/                # Shared images
+│       ├── ch02.md
+│       └── ch03.md
+├── bilingual/             # Bilingual CN/EN edition
+├── skills/                # Claude Code skills (daohen, update-book)
+├── hooks/                 # Pre-commit privacy gate
+├── scripts/               # Privacy scanner
+└── images/originals/      # Source page images
 ```
