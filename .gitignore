@@ -1,3 +1,7 @@
 book/
+build/
 *.env
 __pycache__/
+images/*
+!images/originals/
+images/processed/
