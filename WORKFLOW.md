@@ -170,6 +170,18 @@ Each chapter starts with an epigraph page. Use this HTML structure:
 - **No special markup needed** — CSS handles first-line indent (`text-indent: 2em`)
 - Use `---` for page breaks between sections
 - Use `> ` blockquotes for highlighted text boxes (grey background, matching original)
+- **CRITICAL: Multi-line blockquotes must have `>` blank lines between each line**, otherwise markdown merges them into one paragraph:
+
+```markdown
+WRONG (renders as one line):
+> Line one.
+> Line two.
+
+CORRECT (renders as separate lines):
+> Line one.
+>
+> Line two.
+```
 
 ### Chapter Footer
 
