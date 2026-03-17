@@ -1,22 +1,47 @@
-/* Custom styling for 人选天选论 — matching original book layout */
+/* 人选天选论 — Mobile-first book styling
+ *
+ * Design principles (from original book app screenshots):
+ * 1. Warm cream background, serif font — paper-like reading feel
+ * 2. Generous line height (2.0+) — Chinese text needs vertical breathing room
+ * 3. First-line indent 2em — traditional Chinese typesetting
+ * 4. Highlighted boxes: full-width grey panels, not cramped insets
+ * 5. Comfortable margins — not too wide, not too tight
+ * 6. Mobile-first: phone is the primary reading device
+ */
 
-/* ===== Typography ===== */
+/* ===== Base: Mobile-first ===== */
 
-/* Chinese body text: serif font, comfortable reading */
+:root {
+    --bg: #faf8f4;
+    --fg: #2c2c2c;
+    --quote-bg: #f0ede7;
+    --quote-border: #d4cfc7;
+    --divider: #e0ddd6;
+    --muted: #888;
+}
+
+.light {
+    --bg: #faf8f4;
+}
+
+/* Override mdBook's default content padding on mobile */
 .content main {
     font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
     font-size: 1.05rem;
-    line-height: 1.9;
-    color: #2c2c2c;
+    line-height: 2.0;
+    color: var(--fg);
+    max-width: 42em;
+    padding: 0 1.2em;
 }
 
-/* First-line indent for body paragraphs (Chinese convention) */
+/* ===== Body paragraphs ===== */
+
 .content main p {
     text-indent: 2em;
-    margin-bottom: 0.8em;
+    margin: 0 0 1.2em 0;
 }
 
-/* Don't indent paragraphs inside blockquotes or epigraphs */
+/* No indent inside blockquotes, epigraphs, or after headings */
 .content main blockquote p,
 .content main .epigraph p {
     text-indent: 0;
@@ -27,43 +52,70 @@
 .content main h1 {
     font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: 2em 0 1.5em;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
 }
 
-/* ===== Epigraph (chapter opening poem/quote) ===== */
+/* ===== Blockquote: highlighted text panels ===== */
+/* Key: generous padding, full-width feel, not cramped insets */
+
+.content main blockquote {
+    background: var(--quote-bg);
+    border-left: 3px solid var(--quote-border);
+    border-radius: 4px;
+    padding: 1em 1.2em;
+    margin: 1.5em 0;  /* flush with body text margins, no extra inset */
+    font-size: 1rem;
+    line-height: 2.0;
+    color: #3a3a3a;
+}
+
+.content main blockquote p {
+    margin: 0.2em 0;
+}
+
+/* ===== Page break separator ===== */
+
+.content main hr {
+    border: none;
+    border-top: 1px solid var(--divider);
+    margin: 2em auto;
+    width: 50%;
+}
+
+/* ===== Epigraph (chapter opening page) ===== */
 
 .epigraph {
     text-align: center;
-    padding: 3em 2em;
-    margin: 0 auto 2em;
-    max-width: 80%;
+    padding: 2em 0.5em;
+    margin: 0 auto 1.5em;
 }
 
 .epigraph .book-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.25em;
     margin-bottom: 0.3em;
 }
 
 .epigraph .book-author {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 1.5em;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 1em;
 }
 
 .epigraph hr {
-    width: 60%;
-    margin: 1.5em auto;
+    width: 50%;
+    margin: 1em auto;
     border: none;
     border-top: 1px solid #ccc;
 }
 
 .epigraph .verse {
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 2.2;
     color: #444;
 }
@@ -73,57 +125,47 @@
     margin: 0;
 }
 
-/* ===== Blockquote (highlighted text boxes) ===== */
-/* Matching the original's light grey background box */
-
-.content main blockquote {
-    background: #f5f3ef;
-    border-left: 3px solid #d4cfc7;
-    border-radius: 4px;
-    padding: 1.2em 1.5em;
-    margin: 1.5em 1em;
-    font-size: 0.98rem;
-    line-height: 2;
-    color: #3a3a3a;
-}
-
-.content main blockquote p {
-    margin: 0.3em 0;
-}
-
-/* ===== Page break separator ===== */
-
-.content main hr {
-    border: none;
-    border-top: 1px solid #e0ddd6;
-    margin: 2.5em auto;
-    width: 40%;
-}
-
-/* ===== Chapter footer attribution ===== */
+/* ===== Chapter footer ===== */
 
 .chapter-footer {
     text-align: center;
-    font-size: 0.85rem;
-    color: #999;
+    font-size: 0.8rem;
+    color: var(--muted);
     margin-top: 3em;
-    padding-top: 1em;
-    border-top: 1px solid #e0ddd6;
+    padding-top: 0.8em;
+    border-top: 1px solid var(--divider);
 }
 
-/* ===== Page background (warm off-white like the original) ===== */
+/* ===== Desktop: wider screens get more breathing room ===== */
 
-:root {
-    --bg: #faf8f4;
-    --fg: #2c2c2c;
-}
+@media (min-width: 769px) {
+    .content main {
+        font-size: 1.1rem;
+        padding: 0 2em;
+    }
 
-.light {
-    --bg: #faf8f4;
-}
+    .content main h1 {
+        font-size: 1.8rem;
+        margin: 2.5em 0 2em;
+    }
 
-/* ===== Reading width ===== */
+    .epigraph {
+        padding: 3em 2em;
+        max-width: 75%;
+    }
 
-.content main {
-    max-width: 42em;
+    .epigraph .book-title {
+        font-size: 2.2rem;
+        letter-spacing: 0.3em;
+    }
+
+    .content main blockquote {
+        padding: 1.2em 1.8em;
+        margin: 1.8em 0.5em;
+    }
+
+    .content main hr {
+        width: 40%;
+        margin: 2.5em auto;
+    }
 }
