@@ -1,5 +1,7 @@
 # A Philosophy of Choice and Cost
 
+> **This repository is no longer maintained.** A more comprehensive and up-to-date version is available at the official site: **[renxuantianxuan.com/docs](https://renxuantianxuan.com/docs)**
+
 **《人选天选论》 by 姜蓝 (Jiang Lan)**
 
 > Understanding the hidden stones of greed and fear beneath the river of your mind.
